@@ -1,0 +1,37 @@
+$dark-green: #024b4d;
+$light-green: #0b887e;
+$dark-blue: #161627;
+
+.background {
+  background-color: $dark-green;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .left-side {
+    background-color: $light-green;
+    width: 40vw;
+    z-index: 1;
+  }
+
+  .separator {
+    width: 0;
+    height: 0;
+    border-top: 100vh solid transparent;
+    border-left: 50vh solid $light-green;
+    margin-left: -1px;
+    z-index: 1;
+  }
+
+  .right-side {
+    .circle {
+      position: fixed;
+      right: -100px;
+      bottom: -275px;
+      width: 60vw;
+      height: 60vw;
+      background-color: #161627;
+      border-radius: 50%;
+      z-index: 0;
+    }
+  }
+}

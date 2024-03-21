@@ -1,0 +1,29 @@
+.background {
+  background-color: #024b4d;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.background .left-side {
+  background-color: #0b887e;
+  width: 40vw;
+  z-index: 1;
+}
+.background .separator {
+  width: 0;
+  height: 0;
+  border-top: 100vh solid transparent;
+  border-left: 50vh solid #0b887e;
+  margin-left: -1px;
+  z-index: 1;
+}
+.background .right-side .circle {
+  position: fixed;
+  right: -100px;
+  bottom: -275px;
+  width: 60vw;
+  height: 60vw;
+  background-color: #161627;
+  border-radius: 50%;
+  z-index: 0;
+}/*# sourceMappingURL=Landing.css.map */
