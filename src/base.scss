@@ -1,0 +1,120 @@
+/* Fonts */
+
+$path: "../assets/fonts";
+
+@mixin font-face($family, $font, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family, Arial, sans-serif;
+    src: url("#{$path}/#{$font}.ttf") format("truetype");
+
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font-face("Quicksand", "Quicksand", 300);
+@include font-face("Quicksand", "Quicksand", normal);
+@include font-face("Quicksand", "Quicksand", 500);
+@include font-face("Quicksand", "Quicksand", 600);
+@include font-face("Quicksand", "Quicksand", 700);
+
+@include font-face("BeVietnamPro", "BeVietnamPro-ThinItalic", 100, italic);
+@include font-face("BeVietnamPro", "BeVietnamPro-Thin", 100);
+@include font-face(
+  "BeVietnamPro",
+  "BeVietnamPro-ExtraLightItalic",
+  200,
+  italic
+);
+@include font-face("BeVietnamPro-ExtraLight", "BeVietnamPro-ExtraLight", 200);
+@include font-face(
+  "BeVietnamPro-LightItalic",
+  "BeVietnamPro-LightItalic",
+  300,
+  italic
+);
+@include font-face("BeVietnamPro-Light", "BeVietnamPro-Light", 300);
+@include font-face("BeVietnamPro-Italic", "BeVietnamPro-Italic", 400, italic);
+@include font-face("BeVietnamPro-Regular", "BeVietnamPro-Regular", 400);
+@include font-face(
+  "BeVietnamPro-MediumItalic",
+  "BeVietnamPro-MediumItalic",
+  500,
+  italic
+);
+@include font-face("BeVietnamPro-Medium", "BeVietnamPro-Medium", 500);
+@include font-face(
+  "BeVietnamPro-SemiBoldItalic",
+  "BeVietnamPro-SemiBoldItalic",
+  600,
+  italic
+);
+@include font-face("BeVietnamPro-SemiBold", "BeVietnamPro-SemiBold", 600);
+@include font-face(
+  "BeVietnamPro-BoldItalic",
+  "BeVietnamPro-BoldItalic",
+  700,
+  italic
+);
+@include font-face("BeVietnamPro-Bold", "BeVietnamPro-Bold", 700);
+@include font-face(
+  "BeVietnamPro-ExtraBoldItalic",
+  "BeVietnamPro-ExtraBoldItalic",
+  800,
+  italic
+);
+@include font-face("BeVietnamPro-ExtraBold", "BeVietnamPro-ExtraBold", 800);
+@include font-face(
+  "BeVietnamPro-BlackItalic",
+  "BeVietnamPro-BlackItalic",
+  900,
+  italic
+);
+@include font-face("BeVietnamPro-Black", "BeVietnamPro-Black", 900);
+
+/* Colors */
+
+$dark-green: #024b4d;
+$light-green: #0b887e;
+$dark-blue: #161627;
+$blue: #262732;
+$white: #fff;
+$black: #000;
+$dark-coral: #f25c68;
+$medium-coral: #f27e88;
+$light-coral: #fa7e8d;
+$dark-gray: #404040;
+$gray: #636767;
+$light-gray: #e3e4e5;
+$gray-green: #2b3a3b;
+
+/* Breakpoints */
+
+$screen-sm-max: 640px;
+$screen-md-max: 768px;
+$screen-lg-max: 1024px;
+$screen-xl-max: 1280px;
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}

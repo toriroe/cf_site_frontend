@@ -1,15 +1,168 @@
-.background {
+/* Fonts */
+@font-face {
+  font-family: "Quicksand", Arial, sans-serif;
+  src: url("../assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand", Arial, sans-serif;
+  src: url("../assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand", Arial, sans-serif;
+  src: url("../assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand", Arial, sans-serif;
+  src: url("../assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand", Arial, sans-serif;
+  src: url("../assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro-ExtraLight", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-LightItalic", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro-Light", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-Italic", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro-Regular", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-MediumItalic", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro-Medium", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-SemiBoldItalic", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro-SemiBold", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-BoldItalic", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro-Bold", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-ExtraBoldItalic", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro-ExtraBold", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BeVietnamPro-BlackItalic", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "BeVietnamPro-Black", Arial, sans-serif;
+  src: url("../assets/fonts/BeVietnamPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/* Colors */
+/* Breakpoints */
+.landing__background {
   background-color: #024b4d;
   width: 100vw;
   height: 100vh;
   display: flex;
+  position: fixed;
+  z-index: -1;
 }
-.background .left-side {
+.landing__background .landing__background-left-side {
   background-color: #0b887e;
   width: 40vw;
   z-index: 1;
 }
-.background .separator {
+@media (max-width: 1280px) {
+  .landing__background .landing__background-left-side {
+    width: 35vw;
+  }
+}
+@media (max-width: 768px) {
+  .landing__background .landing__background-left-side {
+    width: 30vw;
+  }
+}
+.landing__background .landing__background-separator {
   width: 0;
   height: 0;
   border-top: 100vh solid transparent;
@@ -17,7 +170,7 @@
   margin-left: -1px;
   z-index: 1;
 }
-.background .right-side .circle {
+.landing__background .landing__background-right-side .landing__background-circle {
   position: fixed;
   right: -100px;
   bottom: -275px;
@@ -26,4 +179,165 @@
   background-color: #161627;
   border-radius: 50%;
   z-index: 0;
+}
+@media (max-width: 1024px) {
+  .landing__background .landing__background-right-side .landing__background-circle {
+    bottom: -100px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 56px;
+  padding: 2vh 3vw 0;
+}
+.header .header__logo {
+  margin-top: 10px;
+  width: 100px;
+  height: 48px;
+}
+.header .header__button-login {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-family: "BeVietnamPro-SemiBold";
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  align-self: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__left {
+  display: flex;
+  flex-direction: column;
+}
+.main .main__left .main__title {
+  color: #fff;
+  margin: 0;
+  font-family: "BeVietnamPro-ExtraBoldItalic";
+  font-size: 78px;
+  padding: 20vh 0 0 5vw;
+}
+@media (max-width: 1280px) {
+  .main .main__left .main__title {
+    font-size: 62px;
+  }
+}
+@media (max-width: 1024px) {
+  .main .main__left .main__title {
+    padding: 15vh 0 0 5vw;
+    font-size: 78px;
+  }
+}
+.main .main__left .main__subtitle {
+  color: #000;
+  margin: 0;
+  font-family: "Quicksand";
+  font-size: 36px;
+  align-self: center;
+  padding-top: 50px;
+}
+@media (max-width: 1280px) {
+  .main .main__left .main__subtitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .main .main__left .main__subtitle {
+    padding-left: 5vw;
+    align-self: flex-start;
+  }
+}
+.main .main__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .main__right .main__description {
+  color: #fff;
+  font-family: "BeVietnamPro-Regular";
+  font-size: 32px;
+  max-width: 32vw;
+  text-align: center;
+  margin: 0;
+  padding: 8vh 8vw 0 0;
+}
+@media (max-width: 1280px) {
+  .main .main__right .main__description {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .main .main__right .main__description {
+    font-size: 22px;
+  }
+}
+.main .main__right .main__description .main__description-italic {
+  font-family: "BeVietnamPro-BoldItalic";
+}
+.main .main__right .main__register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main__right .main__register .main__register-text {
+  font-family: "BeVietnamPro-Black";
+  font-size: 60px;
+  color: #fff;
+  margin: 0;
+  padding: 28vh 0 3vh;
+}
+@media (max-width: 1280px) {
+  .main .main__right .main__register .main__register-text {
+    font-size: 52px;
+  }
+}
+@media (max-width: 1024px) {
+  .main .main__right .main__register .main__register-text {
+    font-size: 46px;
+  }
+}
+.main .main__right .main__register .main__register-button {
+  background: none;
+  border: none;
+  color: #fa7e8d;
+  font-family: "BeVietnamPro-BoldItalic";
+  font-size: 60px;
+  cursor: pointer;
+}
+.main .main__right .main__register .main__register-button:hover {
+  color: #f25c68;
+}
+@media (max-width: 1280px) {
+  .main .main__right .main__register .main__register-button {
+    font-size: 52px;
+  }
+}
+@media (max-width: 1024px) {
+  .main .main__right .main__register .main__register-button {
+    font-size: 46px;
+  }
+}
+.main .main__right .main__register .main__register-subtext {
+  font-family: "Quicksand";
+  font-weight: light;
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+  padding-top: 3vh;
+}
+@media (max-width: 1280px) {
+  .main .main__right .main__register .main__register-subtext {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .main .main__right .main__register .main__register-subtext {
+    font-size: 22px;
+  }
 }/*# sourceMappingURL=Landing.css.map */

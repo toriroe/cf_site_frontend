@@ -1,13 +1,42 @@
-.background {
+.landing__background {
   background-color: #024b4d;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  z-index: -1;
 }
-.background .left-side {
+.landing__background .landing__background-left-side {
+  background-color: #0b887e;
+  width: 40vw;
+  z-index: 1;
+}
+.landing__background .landing__background-separator {
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid black;
-  background-color: #0b887e;
+  border-top: 100vh solid transparent;
+  border-left: 50vh solid #0b887e;
+  margin-left: -1px;
+  z-index: 1;
+}
+.landing__background .landing__background-right-side .landing__background-circle {
+  position: fixed;
+  right: -100px;
+  bottom: -275px;
+  width: 60vw;
+  height: 60vw;
+  background-color: #161627;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__logo {
+  height: 56px;
+  width: 130px;
 }
 body {
   margin: 0;
