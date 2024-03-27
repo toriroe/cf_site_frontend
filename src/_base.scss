@@ -80,9 +80,9 @@ $dark-blue: #161627;
 $blue: #262732;
 $white: #fff;
 $black: #000;
-$dark-coral: #f25c68;
-$medium-coral: #f27e88;
-$light-coral: #fa7e8d;
+$coral: #f25c68;
+$light-pink: #eb898f;
+$light-coral: #f27e88;
 $dark-gray: #404040;
 $gray: #636767;
 $light-gray: #e3e4e5;
@@ -118,3 +118,7 @@ $screen-xl-max: 1280px;
     @content;
   }
 }
+
+// Other variables
+
+$imagePath: "../../assets/images";

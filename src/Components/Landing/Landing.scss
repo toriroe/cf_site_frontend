@@ -8,6 +8,10 @@
   position: fixed;
   z-index: -1;
 
+  &_modal-open {
+    filter: blur(10px);
+  }
+
   .landing__background-left-side {
     background-color: $light-green;
     width: 40vw;
@@ -53,6 +57,10 @@
   max-height: 56px;
   padding: 2vh 3vw 0;
 
+  &_modal-open {
+    filter: blur(10px);
+  }
+
   .header__logo {
     margin-top: 10px;
     width: 100px;
@@ -74,6 +82,10 @@
 .main {
   display: flex;
   justify-content: space-between;
+
+  &_modal-open {
+    filter: blur(10px);
+  }
   .main__left {
     display: flex;
     flex-direction: column;
@@ -82,8 +94,9 @@
       color: $white;
       margin: 0;
       font-family: "BeVietnamPro-ExtraBoldItalic";
-      font-size: 78px;
-      padding: 20vh 0 0 5vw;
+      font-size: 82px;
+      padding: 22vh 0 0 5vw;
+      filter: drop-shadow(-7px 7px 0 #f25c68);
       @include xl {
         font-size: 62px;
       }
@@ -155,12 +168,12 @@
       .main__register-button {
         background: none;
         border: none;
-        color: $light-coral;
+        color: $light-pink;
         font-family: "BeVietnamPro-BoldItalic";
         font-size: 60px;
         cursor: pointer;
         &:hover {
-          color: $dark-coral;
+          color: $coral;
         }
         @include xl {
           font-size: 52px;

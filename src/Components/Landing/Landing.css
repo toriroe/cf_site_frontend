@@ -147,6 +147,9 @@
   position: fixed;
   z-index: -1;
 }
+.landing__background_modal-open {
+  filter: blur(10px);
+}
 .landing__background .landing__background-left-side {
   background-color: #0b887e;
   width: 40vw;
@@ -192,6 +195,9 @@
   max-height: 56px;
   padding: 2vh 3vw 0;
 }
+.header_modal-open {
+  filter: blur(10px);
+}
 .header .header__logo {
   margin-top: 10px;
   width: 100px;
@@ -212,6 +218,9 @@
   display: flex;
   justify-content: space-between;
 }
+.main_modal-open {
+  filter: blur(10px);
+}
 .main .main__left {
   display: flex;
   flex-direction: column;
@@ -220,8 +229,9 @@
   color: #fff;
   margin: 0;
   font-family: "BeVietnamPro-ExtraBoldItalic";
-  font-size: 78px;
-  padding: 20vh 0 0 5vw;
+  font-size: 82px;
+  padding: 22vh 0 0 5vw;
+  filter: drop-shadow(-7px 7px 0 #f25c68);
 }
 @media (max-width: 1280px) {
   .main .main__left .main__title {
@@ -305,7 +315,7 @@
 .main .main__right .main__register .main__register-button {
   background: none;
   border: none;
-  color: #fa7e8d;
+  color: #eb898f;
   font-family: "BeVietnamPro-BoldItalic";
   font-size: 60px;
   cursor: pointer;

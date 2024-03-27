@@ -138,4 +138,85 @@
   font-style: normal;
 }
 /* Colors */
-/* Breakpoints *//*# sourceMappingURL=base.css.map */
+/* Breakpoints */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal .modal__content {
+  background-color: rgba(227, 228, 229, 0.8);
+  max-width: 672px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.modal .modal__content .modal__header {
+  display: flex;
+  background-color: #eb898f;
+  border-radius: 20px 20px 0 0;
+  justify-content: space-between;
+}
+.modal .modal__content .modal__header .modal__title {
+  font-family: "BeVietnamPro-Black";
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+  padding: 20px 0;
+  padding-left: 20px;
+}
+.modal .modal__content .modal__header .modal__button-container {
+  padding: 20px 20px;
+  border-left: 1px solid #262732;
+  border-radius: 0 20px 0 0;
+}
+.modal .modal__content .modal__header .modal__button-container:hover {
+  background-color: #f27e88;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.modal .modal__content .modal__header .modal__button-container .modal__button-close {
+  background: url("src/assets/images/blue-close-icon.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: auto 0;
+}
+.modal .modal__content .modal__header .modal__button-container .modal__button-close:hover {
+  background: url("src/assets/images/white-close-icon.svg");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.modal .modal__content .modal__form {
+  display: flex;
+  flex-direction: column;
+}
+.modal .modal__content .modal__form .modal__button-submit {
+  font-family: "BeVietnamPro-ExtraBold";
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  background-color: #262732;
+  border-radius: 40px;
+  align-self: center;
+  width: 330px;
+  padding: 18px 0;
+  margin-bottom: 70px;
+}
+.modal .modal__content .modal__form .modal__button-submit:hover {
+  background-color: #eb898f;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}/*# sourceMappingURL=ModalWithForm.css.map */
