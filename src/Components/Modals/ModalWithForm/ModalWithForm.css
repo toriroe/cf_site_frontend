@@ -238,4 +238,55 @@
 }
 .modal .modal__content .modal__form .modal__alt-text .modal__button-alt_none {
   display: none;
+}
+
+/* ---------------------------- Modal form styles --------------------------- */
+.modal__form-content {
+  padding: 40px 60px;
+  position: relative;
+}
+.modal__form-content .modal__input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 26px;
+  position: relative;
+}
+.modal__form-content .modal__input .modal__input-title {
+  font-family: "BeVietnamPro-Bold";
+  font-size: 22px;
+  margin: 0;
+}
+.modal__form-content .modal__input .modal__form-input {
+  font-family: "Quicksand";
+  font-weight: 600;
+  font-size: 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #636767;
+  padding: 10px 0 10px 12px;
+}
+.modal__form-content .modal__input .modal__form-input:focus {
+  outline: none;
+}
+.modal__form-content .modal__input .modal__form-input_invalid {
+  border-bottom: 1px solid #f25c68;
+}
+.modal__form-content .modal__input .modal__error {
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  font-family: "Quicksand";
+  font-weight: 600;
+  font-size: 16px;
+  color: #f25c68;
+}
+.modal__form-content .modal__error-bottom {
+  font-family: "Quicksand";
+  font-weight: 600;
+  font-size: 20px;
+  color: #f25c68;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 16px;
+  left: 200px;
 }/*# sourceMappingURL=ModalWithForm.css.map */

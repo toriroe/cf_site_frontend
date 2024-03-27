@@ -1,30 +1,19 @@
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import "../ModalWithForm/ModalWithForm.scss";
 
-const RegisterModal = ({ onClose, onRegister, onAltClick }) => {
+const LoginModal = ({ onClose, onRegister, onAltClick }) => {
   return (
     <ModalWithForm
-      name="register"
-      title="We need some info..."
+      name="login"
+      title="Welcome back!"
       //   onClose={onClose}
-      buttonText="Next"
-      altText="Already a user?"
-      altButtonText="Log in"
+      buttonText="Log in"
+      altText="New here?"
+      altButtonText="Sign up"
       //   onAltClick={onAltClick}
       //   onSubmit={handleSubmit}
     >
       <div className="modal__form-content">
-        <label className="modal__input">
-          <p className="modal__input-title">Name</p>
-          <input
-            className="modal__form-input"
-            type="name"
-            name="name"
-            placeholder="Smithy McPlaceholder"
-            required
-          />
-          <span className="modal__error"></span>
-        </label>
         <label className="modal__input">
           <p className="modal__input-title">Email</p>
           <input
@@ -47,21 +36,10 @@ const RegisterModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input">
-          <p className="modal__input-title">Confirm Password</p>
-          <input
-            className="modal__form-input"
-            type="password"
-            name="password-check"
-            placeholder="************"
-            required
-          />
-          <span className="modal__error"></span>
-        </label>
-        <span className="modal__error-bottom"></span>
+        <span className="modal__error-bottom">Email or password incorrect</span>
       </div>
     </ModalWithForm>
   );
 };
 
-export default RegisterModal;
+export default LoginModal;

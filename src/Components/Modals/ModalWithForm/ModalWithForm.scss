@@ -106,3 +106,62 @@
     }
   }
 }
+
+/* ---------------------------- Modal form styles --------------------------- */
+
+.modal__form-content {
+  padding: 40px 60px;
+  position: relative;
+
+  .modal__input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 26px;
+    position: relative;
+
+    .modal__input-title {
+      font-family: "BeVietnamPro-Bold";
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .modal__form-input {
+      font-family: "Quicksand";
+      font-weight: 600;
+      font-size: 20px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $gray;
+      padding: 10px 0 10px 12px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &_invalid {
+        border-bottom: 1px solid $coral;
+      }
+    }
+
+    .modal__error {
+      position: absolute;
+      bottom: 0;
+      left: 8px;
+      font-family: "Quicksand";
+      font-weight: 600;
+      font-size: 16px;
+      color: $coral;
+    }
+  }
+
+  .modal__error-bottom {
+    font-family: "Quicksand";
+    font-weight: 600;
+    font-size: 20px;
+    color: $coral;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 16px;
+    left: 200px;
+  }
+}
