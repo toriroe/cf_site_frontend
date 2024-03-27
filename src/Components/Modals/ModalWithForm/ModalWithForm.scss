@@ -20,9 +20,11 @@
 
     .modal__header {
       display: flex;
+      justify-content: center;
       background-color: $light-pink;
       border-radius: 20px 20px 0 0;
-      justify-content: space-between;
+
+      position: relative;
 
       .modal__title {
         font-family: "BeVietnamPro-Black";
@@ -33,13 +35,25 @@
         padding-left: 20px;
       }
       .modal__button-container {
-        padding: 20px 20px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        top: 0;
+        padding: 0 20px;
+        height: 100%;
         border-left: 1px solid $blue;
+
         border-radius: 0 20px 0 0;
         &:hover {
           background-color: $light-coral;
           border-left: 1px solid rgba(255, 255, 255, 0.3);
         }
+        transition-property: background-color, border-left;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+
         .modal__button-close {
           background: url("src/assets/images/blue-close-icon.svg");
           background-color: transparent;
@@ -50,7 +64,7 @@
           width: 40px;
           height: 40px;
           cursor: pointer;
-          margin: auto 0;
+
           &:hover {
             background: url("src/assets/images/white-close-icon.svg");
             background-color: transparent;
@@ -58,6 +72,7 @@
             background-repeat: no-repeat;
             background-size: contain;
           }
+          transition: background 0.2s ease-in-out;
         }
       }
     }
@@ -81,6 +96,9 @@
           color: rgba(255, 255, 255, 0.6);
           cursor: pointer;
         }
+        transition-property: background-color, color;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
       }
       .modal__alt-text {
         font-family: "Quicksand";

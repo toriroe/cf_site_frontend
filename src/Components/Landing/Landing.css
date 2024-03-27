@@ -319,6 +319,7 @@
   font-family: "BeVietnamPro-BoldItalic";
   font-size: 60px;
   cursor: pointer;
+  transition: color 0.2s ease-in-out;
 }
 .main .main__right .main__register .main__register-button:hover {
   color: #f25c68;

@@ -159,9 +159,10 @@
 }
 .modal .modal__content .modal__header {
   display: flex;
+  justify-content: center;
   background-color: #eb898f;
   border-radius: 20px 20px 0 0;
-  justify-content: space-between;
+  position: relative;
 }
 .modal .modal__content .modal__header .modal__title {
   font-family: "BeVietnamPro-Black";
@@ -172,9 +173,19 @@
   padding-left: 20px;
 }
 .modal .modal__content .modal__header .modal__button-container {
-  padding: 20px 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  padding: 0 20px;
+  height: 100%;
   border-left: 1px solid #262732;
   border-radius: 0 20px 0 0;
+  transition-property: background-color, border-left;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .modal .modal__content .modal__header .modal__button-container:hover {
   background-color: #f27e88;
@@ -190,7 +201,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  margin: auto 0;
+  transition: background 0.2s ease-in-out;
 }
 .modal .modal__content .modal__header .modal__button-container .modal__button-close:hover {
   background: url("src/assets/images/white-close-icon.svg");
@@ -213,6 +224,9 @@
   align-self: center;
   width: 300px;
   padding: 18px 0;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .modal .modal__content .modal__form .modal__button-submit:hover {
   background-color: #eb898f;
