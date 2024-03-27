@@ -46,13 +46,11 @@
         border-left: 1px solid $blue;
 
         border-radius: 0 20px 0 0;
-        &:hover {
+
+        &_hover {
           background-color: $light-coral;
           border-left: 1px solid rgba(255, 255, 255, 0.3);
         }
-        transition-property: background-color, border-left;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
 
         .modal__button-close {
           background: url("src/assets/images/blue-close-icon.svg");
@@ -72,7 +70,6 @@
             background-repeat: no-repeat;
             background-size: contain;
           }
-          transition: background 0.2s ease-in-out;
         }
       }
     }

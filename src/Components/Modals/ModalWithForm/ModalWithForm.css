@@ -183,11 +183,8 @@
   height: 100%;
   border-left: 1px solid #262732;
   border-radius: 0 20px 0 0;
-  transition-property: background-color, border-left;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
 }
-.modal .modal__content .modal__header .modal__button-container:hover {
+.modal .modal__content .modal__header .modal__button-container_hover {
   background-color: #f27e88;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -201,7 +198,6 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
 }
 .modal .modal__content .modal__header .modal__button-container .modal__button-close:hover {
   background: url("src/assets/images/white-close-icon.svg");
