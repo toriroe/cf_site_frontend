@@ -7,6 +7,7 @@ import Landing from "../Landing/Landing";
 import ModalWithForm from "../Modals/ModalWithForm/ModalWithForm";
 import RegisterModal from "../Modals/RegisterModal/RegisterModal";
 import LoginModal from "../Modals/LoginModal/LoginModal";
+import EditAccountModal from "../Modals/EditAccountModal/EditAccountModal";
 
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
@@ -20,7 +21,8 @@ function App() {
         <Route exact path="/">
           <Landing />
           {/* <RegisterModal /> */}
-          <LoginModal />
+          {/* <LoginModal /> */}
+          <EditAccountModal />
         </Route>
       </Switch>
     </CurrentUserContext.Provider>
