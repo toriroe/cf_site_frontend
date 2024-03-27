@@ -1,0 +1,46 @@
+@import "../../../base.scss";
+
+.modal__form-content {
+  padding: 30px 50px 30px;
+
+  .modal__input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    position: relative;
+
+    .modal__input-title {
+      font-family: "BeVietnamPro-Bold";
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .modal__form-input {
+      font-family: "Quicksand";
+      font-weight: 600;
+      font-size: 20px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $gray;
+      padding: 10px 0 10px 12px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &_invalid {
+        border-bottom: 1px solid $coral;
+      }
+    }
+
+    .modal__error {
+      position: absolute;
+      bottom: 0;
+      left: 8px;
+      font-family: "Quicksand";
+      font-weight: 600;
+      font-size: 16px;
+      color: $coral;
+    }
+  }
+}

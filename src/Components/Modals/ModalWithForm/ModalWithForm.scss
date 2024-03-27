@@ -73,13 +73,34 @@
         background-color: $blue;
         border-radius: 40px;
         align-self: center;
-        width: 330px;
+        width: 300px;
         padding: 18px 0;
-        margin-bottom: 70px;
+
         &:hover {
           background-color: $light-pink;
           color: rgba(255, 255, 255, 0.6);
           cursor: pointer;
+        }
+      }
+      .modal__alt-text {
+        font-family: "Quicksand";
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+        margin: 0;
+        padding: 16px 0 30px;
+        .modal__button-alt {
+          font-family: "Quicksand";
+          font-weight: 500;
+          font-size: 22px;
+          background: transparent;
+          border: none;
+          color: $coral;
+          cursor: pointer;
+
+          &_none {
+            display: none;
+          }
         }
       }
     }

@@ -5,6 +5,7 @@ import { useEffect, useState, useContext } from "react";
 
 import Landing from "../Landing/Landing";
 import ModalWithForm from "../Modals/ModalWithForm/ModalWithForm";
+import RegisterModal from "../Modals/RegisterModal/RegisterModal";
 
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
@@ -17,7 +18,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Landing />
-          {/* <ModalWithForm /> */}
+          <RegisterModal />
         </Route>
       </Switch>
     </CurrentUserContext.Provider>
