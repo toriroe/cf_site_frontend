@@ -8,6 +8,7 @@ import ModalWithForm from "../Modals/ModalWithForm/ModalWithForm";
 import RegisterModal from "../Modals/RegisterModal/RegisterModal";
 import LoginModal from "../Modals/LoginModal/LoginModal";
 import EditAccountModal from "../Modals/EditAccountModal/EditAccountModal";
+import PhoneNumberModal from "../Modals/PhoneNumberModal/PhoneNumberModal";
 
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
@@ -22,7 +23,8 @@ function App() {
           <Landing />
           {/* <RegisterModal /> */}
           {/* <LoginModal /> */}
-          <EditAccountModal />
+          {/* <EditAccountModal /> */}
+          <PhoneNumberModal />
         </Route>
       </Switch>
     </CurrentUserContext.Provider>

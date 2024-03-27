@@ -15,7 +15,7 @@ const ModalWithForm = ({
     <div className={`modal modal_type_${name}`}>
       <div className="modal__content">
         <div className="modal__header">
-          <h3 className="modal__title">{title}</h3>
+          <h2 className="modal__title">{title}</h2>
           <div className="modal__button-container">
             <button
               className="modal__button-close"

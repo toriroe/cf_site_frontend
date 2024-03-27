@@ -14,7 +14,7 @@ const LoginModal = ({ onClose, onRegister, onAltClick }) => {
       //   onSubmit={handleSubmit}
     >
       <div className="modal__form-content">
-        <label className="modal__input">
+        <label className="modal__input" for="email">
           <p className="modal__input-title">Email</p>
           <input
             className="modal__form-input"
@@ -25,7 +25,7 @@ const LoginModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input">
+        <label className="modal__input" for="password">
           <p className="modal__input-title">Password</p>
           <input
             className="modal__form-input"

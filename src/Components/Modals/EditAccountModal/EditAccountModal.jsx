@@ -14,7 +14,7 @@ const EditAccountModal = ({ onClose, onRegister, onAltClick }) => {
       //   onSubmit={handleSubmit}
     >
       <div className="modal__form-content">
-        <label className="modal__input">
+        <label className="modal__input" for="name">
           <p className="modal__input-title">Name</p>
           <input
             className="modal__form-input"
@@ -25,34 +25,34 @@ const EditAccountModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input">
+        <label className="modal__input" for="password-current">
           <p className="modal__input-title">Current password</p>
           <input
             className="modal__form-input"
             type="password"
-            name="password"
+            name="password-current"
             placeholder="************"
             required
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input">
+        <label className="modal__input" for="password-new">
           <p className="modal__input-title">New password</p>
           <input
             className="modal__form-input"
             type="password"
-            name="password"
+            name="password-new"
             placeholder="************"
             required
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input">
+        <label className="modal__input" for="password-confirm">
           <p className="modal__input-title">Confirm password</p>
           <input
             className="modal__form-input"
             type="password"
-            name="password-check"
+            name="password-confirm"
             placeholder="************"
             required
           />
