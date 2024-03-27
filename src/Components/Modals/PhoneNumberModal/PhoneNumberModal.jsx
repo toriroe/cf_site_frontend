@@ -1,24 +1,24 @@
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import "../ModalWithForm/ModalWithForm.scss";
 
-const PhoneNumberModal = ({ onClose, onRegister, onAltClick }) => {
+const PhoneNumberModal = ({ onClose, onAltClick, handleSubmit }) => {
   return (
     <ModalWithForm
       name="number"
       title="What's your number?"
-      //   onClose={onClose}
+      onClose={onClose}
       buttonText="Next"
-      altText=""
-      altButtonText=""
-      //   onAltClick={onAltClick}
-      //   onSubmit={handleSubmit}
+      altText="Already a user?"
+      altButtonText="Log in"
+      onSubmit={handleSubmit}
+      onAltClick={onAltClick}
     >
       <div className="modal__form-content">
         <p className="modal__text">
           Enter your mobile number to verify you don't already have an account
           with us.
         </p>
-        <label className="modal__input" for="number">
+        <label className="modal__input" htmlFor="number">
           <input
             className="modal__form-input"
             type="tel"

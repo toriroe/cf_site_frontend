@@ -6,15 +6,15 @@ const LoginModal = ({ onClose, onRegister, onAltClick }) => {
     <ModalWithForm
       name="login"
       title="Welcome back!"
-      //   onClose={onClose}
+      onClose={onClose}
       buttonText="Log in"
       altText="New here?"
       altButtonText="Sign up"
-      //   onAltClick={onAltClick}
+      onAltClick={onAltClick}
       //   onSubmit={handleSubmit}
     >
       <div className="modal__form-content">
-        <label className="modal__input" for="email">
+        <label className="modal__input" htmlFor="email">
           <p className="modal__input-title">Email</p>
           <input
             className="modal__form-input"
@@ -25,7 +25,7 @@ const LoginModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input" for="password">
+        <label className="modal__input" htmlFor="password">
           <p className="modal__input-title">Password</p>
           <input
             className="modal__form-input"

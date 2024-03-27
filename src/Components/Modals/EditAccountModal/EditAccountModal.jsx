@@ -4,9 +4,9 @@ import "../ModalWithForm/ModalWithForm.scss";
 const EditAccountModal = ({ onClose, onRegister, onAltClick }) => {
   return (
     <ModalWithForm
-      name="edit"
+      name="edit-account"
       title="Edit account details"
-      //   onClose={onClose}
+      onClose={onClose}
       buttonText="Save"
       altText=""
       altButtonText=""
@@ -14,7 +14,7 @@ const EditAccountModal = ({ onClose, onRegister, onAltClick }) => {
       //   onSubmit={handleSubmit}
     >
       <div className="modal__form-content">
-        <label className="modal__input" for="name">
+        <label className="modal__input" htmlFor="name">
           <p className="modal__input-title">Name</p>
           <input
             className="modal__form-input"
@@ -25,7 +25,7 @@ const EditAccountModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input" for="password-current">
+        <label className="modal__input" htmlFor="password-current">
           <p className="modal__input-title">Current password</p>
           <input
             className="modal__form-input"
@@ -36,7 +36,7 @@ const EditAccountModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input" for="password-new">
+        <label className="modal__input" htmlFor="password-new">
           <p className="modal__input-title">New password</p>
           <input
             className="modal__form-input"
@@ -47,7 +47,7 @@ const EditAccountModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input" for="password-confirm">
+        <label className="modal__input" htmlFor="password-confirm">
           <p className="modal__input-title">Confirm password</p>
           <input
             className="modal__form-input"

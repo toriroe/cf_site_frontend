@@ -6,15 +6,15 @@ const RegisterModal = ({ onClose, onRegister, onAltClick }) => {
     <ModalWithForm
       name="register"
       title="We need some info..."
-      //   onClose={onClose}
+      onClose={onClose}
       buttonText="Next"
       altText="Already a user?"
       altButtonText="Log in"
-      //   onAltClick={onAltClick}
+      onAltClick={onAltClick}
       //   onSubmit={handleSubmit}
     >
       <div className="modal__form-content">
-        <label className="modal__input" for="name">
+        <label className="modal__input" htmlFor="name">
           <p className="modal__input-title">Name</p>
           <input
             className="modal__form-input"
@@ -25,7 +25,7 @@ const RegisterModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input" for="email">
+        <label className="modal__input" htmlFor="email">
           <p className="modal__input-title">Email</p>
           <input
             className="modal__form-input"
@@ -36,7 +36,7 @@ const RegisterModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input" for="password">
+        <label className="modal__input" htmlFor="password">
           <p className="modal__input-title">Password</p>
           <input
             className="modal__form-input"
@@ -47,7 +47,7 @@ const RegisterModal = ({ onClose, onRegister, onAltClick }) => {
           />
           <span className="modal__error"></span>
         </label>
-        <label className="modal__input" for="password-confirm">
+        <label className="modal__input" htmlFor="password-confirm">
           <p className="modal__input-title">Confirm Password</p>
           <input
             className="modal__form-input"
