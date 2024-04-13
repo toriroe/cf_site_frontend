@@ -94,14 +94,10 @@
       .register__image {
         width: 50%;
         height: 100%;
-        // background: $dark-blue url("../../assets/images/landing-image.jpg")
-        //   no-repeat center;
-        // background: center / cover no-repeat url(../../assets//images/landing-image.jpg);
+
+        background: center / cover no-repeat
+          url("src/assets/images/landing-image.jpg");
         background-color: $dark-blue;
-        background-image: url("../../assets/images/landing-image.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
       }
       .register__text {
         width: 50%;

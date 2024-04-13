@@ -12,110 +12,91 @@
   background-color: rgba(0, 0, 0, 0.3);
 
   .modal__content {
-    background-color: rgba(227, 228, 229, 0.8);
+    background-color: $light-pink;
     max-width: 672px;
     width: 100%;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 40px;
 
     .modal__header {
       display: flex;
       justify-content: center;
-      background-color: $light-pink;
-      border-radius: 20px 20px 0 0;
+
+      border-radius: 40px 40px 0 0;
 
       position: relative;
 
       .modal__title {
         font-family: "BeVietnamPro-Black";
-        font-size: 32px;
-        color: $white;
+        font-size: 52px;
+        color: $dark-blue;
         margin: 0;
-        padding: 20px 0;
-        padding-left: 20px;
+        padding: 60px 0 0;
       }
-      .modal__button-container {
+
+      .modal__button-close {
+        background: center / contain no-repeat
+          url("src/assets/images/white-close-icon.svg");
+
+        border: none;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
         position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        right: 0;
-        top: 0;
-        padding: 0 20px;
-        height: 100%;
-        border-left: 1px solid $dark-blue;
+        top: 25px;
+        right: 25px;
+        opacity: 50%;
 
-        border-radius: 0 20px 0 0;
-
-        &_hover {
-          background-color: $coral;
-          border-left: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .modal__button-close {
-          background: url("src/assets/images/blue-close-icon.svg");
-          background-color: transparent;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
-          border: none;
-          width: 40px;
-          height: 40px;
-          cursor: pointer;
-
-          &:hover {
-            background: url("src/assets/images/white-close-icon.svg");
-            background-color: transparent;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-          }
+        &:hover {
+          opacity: 100%;
         }
       }
     }
+  }
 
-    .modal__form {
-      display: flex;
-      flex-direction: column;
-      .modal__button-submit {
-        font-family: "BeVietnamPro-ExtraBold";
-        font-size: 30px;
-        color: $white;
-        border: none;
-        background-color: $dark-blue;
-        border-radius: 40px;
-        align-self: center;
-        width: 300px;
-        padding: 18px 0;
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    .modal__button-submit {
+      font-family: "BeVietnamPro-ExtraBold";
+      font-size: 30px;
+      color: $light-pink;
+      border: none;
+      background-color: $dark-blue;
+      border-radius: 40px;
+      align-self: center;
+      width: 270px;
+      padding: 18px 0;
+      border: solid $dark-blue 3px;
 
-        &:hover {
-          background-color: $light-pink;
-          color: rgba(255, 255, 255, 0.6);
-          cursor: pointer;
-        }
-        transition-property: background-color, color;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
+      &:hover {
+        background-color: transparent;
+        color: $dark-blue;
+        cursor: pointer;
       }
-      .modal__alt-text {
+      transition-property: background-color, color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+    }
+    .modal__alt-text {
+      font-family: "Quicksand";
+      font-weight: 500;
+      font-size: 22px;
+      text-align: center;
+      margin: 0;
+      padding: 16px 0 30px;
+      color: $white;
+      .modal__button-alt {
         font-family: "Quicksand";
         font-weight: 500;
         font-size: 22px;
-        text-align: center;
-        margin: 0;
-        padding: 16px 0 30px;
-        .modal__button-alt {
-          font-family: "Quicksand";
-          font-weight: 500;
-          font-size: 22px;
-          background: transparent;
-          border: none;
-          color: $coral;
-          cursor: pointer;
+        background: transparent;
+        border: none;
+        color: $dark-blue;
+        cursor: pointer;
 
-          &_none {
-            display: none;
-          }
+        &_none {
+          display: none;
         }
       }
     }
@@ -125,7 +106,7 @@
 /* ---------------------------- Modal form styles --------------------------- */
 
 .modal__form-content {
-  padding: 40px 60px;
+  padding: 40px 80px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -140,34 +121,50 @@
       font-family: "BeVietnamPro-Bold";
       font-size: 22px;
       margin: 0;
+      color: $white;
     }
 
     .modal__form-input {
       font-family: "Quicksand";
       font-weight: 600;
       font-size: 20px;
+      color: $white;
       background: none;
       border: none;
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid rgba($white, 0.5);
       padding: 10px 0 10px 12px;
+
+      &::placeholder {
+        color: rgba($white, 0.5);
+      }
 
       &:focus {
         outline: none;
       }
 
       &_invalid {
-        border-bottom: 1px solid $coral;
+        border-bottom: 1px solid $dark-blue;
+      }
+
+      &_valid {
+        border-bottom: 1px solid $white;
+      }
+
+      &-number {
+        width: 430px;
+        font-size: 26px;
+        margin: 0 auto;
       }
     }
 
     .modal__error {
       position: absolute;
-      bottom: 0;
+      bottom: 4px;
       left: 8px;
       font-family: "Quicksand";
       font-weight: 600;
-      font-size: 16px;
-      color: $coral;
+      font-size: 14px;
+      color: $dark-blue;
     }
   }
 
@@ -175,10 +172,10 @@
     font-family: "Quicksand";
     font-weight: 600;
     font-size: 20px;
-    color: $coral;
+    color: $dark-blue;
     margin: 0 auto;
     position: absolute;
-    bottom: 16px;
+    bottom: 8px;
     left: 200px;
   }
 
@@ -191,5 +188,6 @@
     align-self: center;
     margin: 0;
     padding: 50px 0 70px;
+    color: $white;
   }
 }

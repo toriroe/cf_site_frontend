@@ -20,7 +20,7 @@ const PhoneNumberModal = ({ onClose, onAltClick, handleSubmit }) => {
         </p>
         <label className="modal__input" htmlFor="number">
           <input
-            className="modal__form-input"
+            className="modal__form-input modal__form-input-number"
             type="tel"
             name="number"
             placeholder="(444) 444-4444"

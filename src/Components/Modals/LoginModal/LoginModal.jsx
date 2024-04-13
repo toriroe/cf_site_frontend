@@ -34,7 +34,7 @@ const LoginModal = ({ onClose, onRegister, onAltClick }) => {
             placeholder="************"
             required
           />
-          <span className="modal__error"></span>
+          <span className="modal__error">This is an error</span>
         </label>
         <span className="modal__error-bottom">Email or password incorrect</span>
       </div>

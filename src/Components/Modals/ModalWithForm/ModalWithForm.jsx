@@ -1,5 +1,4 @@
 import "./ModalWithForm.scss";
-import { useState } from "react";
 
 const ModalWithForm = ({
   children,
@@ -12,29 +11,16 @@ const ModalWithForm = ({
   altButtonText,
   onAltClick,
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className={`modal modal_type_${name}`}>
       <div className="modal__content">
         <div className="modal__header">
+          <button
+            className="modal__button-close"
+            type="button"
+            onClick={onClose}
+          />
           <h2 className="modal__title">{title}</h2>
-          <div
-            className={`modal__button-container ${
-              isHovered === true ? "modal__button-container_hover" : ""
-            }`}
-          >
-            <button
-              className="modal__button-close"
-              type="button"
-              onClick={onClose}
-              onMouseEnter={() => {
-                setIsHovered(true);
-              }}
-              onMouseLeave={() => {
-                setIsHovered(false);
-              }}
-            />
-          </div>
         </div>
         <form className="modal__form" onSubmit={onSubmit}>
           {children}
