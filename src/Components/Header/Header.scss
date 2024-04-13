@@ -1,0 +1,45 @@
+@import "../../base.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $dark-blue;
+  padding: 20px 40px;
+
+  .header__logo {
+    margin: 0;
+    width: 100px;
+    height: 48px;
+    align-self: center;
+  }
+
+  .header__user {
+    display: flex;
+    align-items: center;
+    .header__user-name {
+      color: $white;
+      font-family: "BeVietnamPro-SemiBold";
+      font-size: 20px;
+      margin: 0;
+      padding-right: 16px;
+    }
+
+    .header__user-placeholder {
+      border: none;
+      background-color: $blue-gray;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: hover;
+      .header__user-placeholder-letter {
+        font-family: "Quicksand";
+        font-weight: 600;
+        font-size: 16px;
+        color: $white;
+      }
+    }
+  }
+}

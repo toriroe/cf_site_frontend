@@ -1,0 +1,43 @@
+@import "../../base.scss";
+
+.profile-form {
+  background-color: $dark-green;
+  height: 100vh;
+
+  .profile-form__container {
+    padding: 40px 60px;
+    .profile-form__header {
+      font-family: "BeVietnamPro-SemiBold";
+      font-size: 32px;
+      color: $white;
+      background-color: rgba(99, 103, 103, 0.7);
+      border-radius: 20px 20px 0 0;
+      padding: 20px 30px;
+      margin: 0;
+    }
+
+    .form {
+      .form__label {
+      }
+
+      .form__input-title {
+      }
+
+      .form__input {
+      }
+
+      .form__error {
+      }
+
+      .form__submit-area {
+        .form__submit-text {
+        }
+
+        .form__error-final {
+        }
+        .form__button-submit {
+        }
+      }
+    }
+  }
+}

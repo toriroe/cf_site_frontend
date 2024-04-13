@@ -1,0 +1,29 @@
+@import "../../base.scss";
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $light-green;
+
+  .nav__link {
+    font-family: "BeVietnamPro-SemiBold";
+    font-size: 20px;
+    color: $coral;
+    text-decoration: none;
+    background-color: $light-pink;
+    padding: 10px 20px;
+    border-left: 1px solid $dark-blue;
+
+    &:hover {
+      background-color: $coral;
+      color: $white;
+    }
+    &_active {
+      background-color: $coral;
+      color: $white;
+    }
+    &:first-of-type {
+      border: none;
+    }
+  }
+}

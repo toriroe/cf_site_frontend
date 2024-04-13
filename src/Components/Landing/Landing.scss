@@ -1,201 +1,142 @@
 @import "../../base.scss";
 
-.landing__background {
-  background-color: $dark-green;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  position: fixed;
-  z-index: -1;
-
+.landing {
   &_modal-open {
     filter: blur(10px);
   }
-
-  .landing__background-left-side {
-    background-color: $light-green;
-    width: 40vw;
-    z-index: 1;
-    @include xl {
-      width: 35vw;
-    }
-    @include md {
-      width: 30vw;
-    }
-  }
-
-  .landing__background-separator {
-    width: 0;
-    height: 0;
-    border-top: 100vh solid transparent;
-    border-left: 50vh solid $light-green;
-    margin-left: -1px;
-    z-index: 1;
-  }
-
-  .landing__background-right-side {
-    .landing__background-circle {
-      position: fixed;
-      right: -100px;
-      bottom: -275px;
-      width: 60vw;
-      height: 60vw;
-      background-color: #161627;
-      border-radius: 50%;
-      z-index: 0;
-
-      @include lg {
-        bottom: -100px;
-      }
-    }
-  }
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  max-height: 56px;
-  padding: 2vh 3vw 0;
-
-  &_modal-open {
-    filter: blur(10px);
-  }
-
-  .header__logo {
-    margin-top: 10px;
-    width: 100px;
-    height: 48px;
-  }
-
-  .header__button-login {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    font-family: "BeVietnamPro-SemiBold";
-    font-size: 20px;
-    color: $white;
-    cursor: pointer;
-    align-self: center;
-  }
-}
-
-.main {
-  display: flex;
-  justify-content: space-between;
-
-  &_modal-open {
-    filter: blur(10px);
-  }
-  .main__left {
+  .landing__header {
+    background-color: $dark-blue;
     display: flex;
-    flex-direction: column;
-
-    .main__title {
-      color: $white;
-      margin: 0;
-      font-family: "BeVietnamPro-ExtraBoldItalic";
-      font-size: 82px;
-      padding: 22vh 0 0 5vw;
-      filter: drop-shadow(-7px 7px 0 #f25c68);
-      @include xl {
-        font-size: 62px;
-      }
-      @include lg {
-        padding: 15vh 0 0 5vw;
-        font-size: 78px;
-      }
-    }
-
-    .main__subtitle {
-      color: $black;
-      margin: 0;
-      font-family: "Quicksand";
-      font-size: 36px;
-      align-self: center;
-      padding-top: 50px;
-      @include xl {
-        font-size: 30px;
-      }
-      @include lg {
-        padding-left: 5vw;
-        align-self: flex-start;
-      }
-    }
-  }
-
-  .main__right {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    .main__description {
-      color: $white;
-      font-family: "BeVietnamPro-Regular";
-      font-size: 32px;
-      max-width: 32vw;
-      text-align: center;
-      margin: 0;
-      padding: 8vh 8vw 0 0;
-      @include xl {
-        font-size: 28px;
-      }
-      @include lg {
-        font-size: 22px;
-      }
+    width: 100vw;
+    max-height: 56px;
+    padding: 20px 40px 0;
+    box-sizing: border-box;
+    margin-bottom: -1px;
 
-      .main__description-italic {
-        font-family: "BeVietnamPro-BoldItalic";
-      }
+    .landing__header-logo {
+      margin-top: 10px;
+      width: 100px;
+      height: 48px;
     }
 
-    .main__register {
+    .landing__header-button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-family: "BeVietnamPro-SemiBold";
+      font-size: 20px;
+      color: rgba($white, 0.2);
+      cursor: pointer;
+      align-self: center;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .main {
+    width: 100vw;
+    .hero {
+      width: 100%;
+      height: calc(100vh - 56px);
+      background-color: $dark-blue;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      .main__register-text {
-        font-family: "BeVietnamPro-Black";
-        font-size: 60px;
+      justify-content: space-between;
+      padding: 0 60px;
+      box-sizing: border-box;
+      margin-bottom: -1px;
+
+      .hero__heading {
+        font-family: "BeVietnamPro-BlackItalic";
+        font-size: 130px;
+        color: $light-pink;
+        margin: 0;
+        max-width: 40vw;
+      }
+
+      .hero__subtext {
+        font-family: "BeVietnamPro-Regular";
+        font-size: 36px;
         color: $white;
         margin: 0;
-        padding: 28vh 0 3vh;
-        @include xl {
-          font-size: 52px;
-        }
-        @include lg {
-          font-size: 46px;
-        }
       }
+    }
 
-      .main__register-button {
-        background: none;
-        border: none;
-        color: $light-pink;
-        font-family: "BeVietnamPro-BoldItalic";
-        font-size: 60px;
-        cursor: pointer;
-        &:hover {
-          color: $coral;
-        }
-        @include xl {
-          font-size: 52px;
-        }
-        @include lg {
-          font-size: 46px;
-        }
-        transition: color 0.2s ease-in-out;
-      }
+    .info {
+      background-color: $dark-green;
 
-      .main__register-subtext {
-        font-family: "Quicksand";
-        font-weight: light;
+      width: 100%;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      .info__text {
+        font-family: "BeVietnamPro-Regular";
         font-size: 32px;
         color: $white;
-        margin: 0;
-        padding-top: 3vh;
-        @include xl {
-          font-size: 28px;
+        max-width: 31vw;
+        text-align: center;
+        margin: auto 0;
+        .info__text-italic {
+          font-family: "BeVietnamPro-BoldItalic";
         }
-        @include lg {
-          font-size: 22px;
+      }
+    }
+
+    .register {
+      width: 100%;
+      height: 60vh;
+      background-color: $light-green;
+      display: flex;
+      margin-top: -1px;
+
+      .register__image {
+        width: 50%;
+        height: 100%;
+        // background: $dark-blue url("../../assets/images/landing-image.jpg")
+        //   no-repeat center;
+        // background: center / cover no-repeat url(../../assets//images/landing-image.jpg);
+        background-color: $dark-blue;
+        background-image: url("../../assets/images/landing-image.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .register__text {
+        width: 50%;
+        padding: 100px 0 0 40px;
+
+        box-sizing: border-box;
+        .register__text-header {
+          font-family: "BeVietnamPro-Black";
+          font-size: 68px;
+          color: $dark-blue;
+          margin: 0;
+          padding-bottom: 20px;
+        }
+
+        .register__text-button {
+          border: 0;
+          padding: 0;
+          background: none;
+          font-family: "BeVietnamPro-BlackItalic";
+          font-size: 68px;
+          color: $light-pink;
+          margin-bottom: 30px;
+
+          &:hover {
+            color: $coral;
+            cursor: pointer;
+          }
+        }
+
+        .register__text-subtext {
+          margin: 0;
+          font-family: "Quicksand";
+          font-size: 32px;
+          font-weight: 300;
+          color: $white;
         }
       }
     }

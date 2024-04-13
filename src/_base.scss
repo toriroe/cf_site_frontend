@@ -77,16 +77,12 @@ $path: "../assets/fonts";
 $dark-green: #024b4d;
 $light-green: #0b887e;
 $dark-blue: #161627;
-$blue: #262732;
+$blue-gray: #2d2d3d;
 $white: #fff;
 $black: #000;
 $coral: #f25c68;
 $light-pink: #eb898f;
-$light-coral: #f27e88;
-$dark-gray: #404040;
-$gray: #636767;
 $light-gray: #e3e4e5;
-$gray-green: #2b3a3b;
 
 /* Breakpoints */
 
@@ -122,3 +118,9 @@ $screen-xl-max: 1280px;
 // Other variables
 
 $imagePath: "../../assets/images";
+
+// Functions
+
+// @function get-path-to-image($imagePath) {
+//   @return $imagePath;
+// }
