@@ -61,6 +61,7 @@ function App() {
               onLogin={handleLoginModal}
               onRegister={handleNumberModal}
             />
+
             {activeModal === "login" && (
               <LoginModal
                 onClose={handleCloseModal}
