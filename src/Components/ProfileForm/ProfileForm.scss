@@ -1,38 +1,87 @@
 @import "../../base.scss";
 
-.profile-form {
-  padding: 40px 60px;
-
-  .profile-form__header {
-    font-family: "BeVietnamPro-SemiBold";
-    font-size: 32px;
-    color: $white;
-    background-color: rgba(99, 103, 103, 0.7);
-    border-radius: 20px 20px 0 0;
-    padding: 20px 30px;
-    margin: 0;
-  }
-
-  .form {
-    .form__label {
+.profile {
+  background-color: $dark-blue;
+  padding: 40px 60px 100px;
+  .profile-form {
+    .profile-form__header {
+      font-family: "BeVietnamPro-SemiBold";
+      font-size: 48px;
+      color: $light-pink;
+      margin: 0;
+      border-bottom: 1px solid $white;
+      padding: 20px;
     }
 
-    .form__input-title {
-    }
-
-    .form__input {
-    }
-
-    .form__error {
-    }
-
-    .form__submit-area {
-      .form__submit-text {
+    .form {
+      display: flex;
+      flex-direction: column;
+      .form__label {
+        border-top: 1px solid rgba($white, 0.2);
+        border-bottom: 1px solid rgba($white, 0.2);
+        padding: 20px 40px;
       }
 
-      .form__error-final {
+      .form__input-title {
+        font-family: "BeVietnamPro-SemiBold";
+        font-size: 22px;
+        color: $white;
+        margin: 0;
+        padding-bottom: 14px;
+        max-width: 50vw;
       }
-      .form__button-submit {
+
+      .form__input {
+        background-color: rgba($white, 0.1);
+        border-radius: 40px;
+        border: 1px solid rgba($white, 0.5);
+        color: $white;
+        font-family: "Quicksand";
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 4px;
+      }
+
+      .form__input:focus {
+        outline: none;
+      }
+
+      .form__error {
+      }
+
+      .form__submit-area {
+        border-top: 1px solid $white;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        .form__submit-text {
+          color: $white;
+          font-family: "BeVietnamPro-Black";
+          font-size: 48px;
+          max-width: 50vw;
+          text-align: center;
+          margin: 60px auto;
+        }
+
+        .form__error-final {
+        }
+        .form__button-submit {
+          font-family: "BeVietnamPro-Black";
+          font-size: 26px;
+          color: $dark-blue;
+          background-color: $light-pink;
+          border-radius: 50px;
+          border: 3px solid $light-pink;
+          padding: 16px 0;
+          align-self: center;
+          cursor: pointer;
+          width: 18vw;
+
+          &:hover {
+            background-color: transparent;
+            color: $light-pink;
+          }
+        }
       }
     }
   }

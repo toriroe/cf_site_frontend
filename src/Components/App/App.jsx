@@ -86,7 +86,10 @@ function App() {
             )}
           </Route>
           <Route path="/create-profile">
-            <EditProfile />
+            <EditProfile type="create" />
+          </Route>
+          <Route path="/edit-profile">
+            <EditProfile type="edit" />
           </Route>
         </Switch>
       </ActiveModalContext.Provider>
