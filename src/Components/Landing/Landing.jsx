@@ -10,7 +10,7 @@ function Landing({ onLogin, onRegister }) {
       className={`landing ${activeModal !== "" ? "landing_modal-open" : ""}`}
     >
       <header className="landing__header">
-        <img className="landing__header-logo" src={Logo} />
+        <img className="landing__header-logo" src={Logo} alt="logo" />
         <button className="landing__header-button" onClick={onLogin}>
           Login
         </button>

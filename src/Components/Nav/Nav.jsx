@@ -19,6 +19,13 @@ function Nav() {
       >
         Messages
       </NavLink>
+      <NavLink
+        to="/somethingelse"
+        className="nav__link"
+        activeClassName="nav__link_active"
+      >
+        Profile
+      </NavLink>
     </nav>
   );
 }

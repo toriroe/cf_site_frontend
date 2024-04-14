@@ -3,8 +3,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: $dark-blue;
-  padding: 20px 40px;
+  background-color: $light-green;
+  padding: 10px 30px;
 
   .header__logo {
     margin: 0;
@@ -33,12 +33,28 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: hover;
+      cursor: pointer;
+
       .header__user-placeholder-letter {
         font-family: "Quicksand";
         font-weight: 600;
         font-size: 16px;
         color: $white;
+      }
+    }
+
+    .header__user-avatar {
+      border: none;
+      background-color: transparent;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      cursor: pointer;
+      .header__user-avatar-image {
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
       }
     }
   }

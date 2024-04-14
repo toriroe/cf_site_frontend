@@ -8,7 +8,7 @@ import RegisterModal from "../Modals/RegisterModal/RegisterModal";
 import LoginModal from "../Modals/LoginModal/LoginModal";
 import EditAccountModal from "../Modals/EditAccountModal/EditAccountModal";
 import PhoneNumberModal from "../Modals/PhoneNumberModal/PhoneNumberModal";
-import ProfileForm from "../ProfileForm/ProfileForm";
+import EditProfile from "../EditProfile/EditProfile";
 
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 import { ActiveModalContext } from "../../contexts/ActiveModalContext";
@@ -85,7 +85,9 @@ function App() {
               />
             )}
           </Route>
-          <Route path="/create-profile">{/* <ProfileForm /> */}</Route>
+          <Route path="/create-profile">
+            <EditProfile />
+          </Route>
         </Switch>
       </ActiveModalContext.Provider>
     </CurrentUserContext.Provider>
