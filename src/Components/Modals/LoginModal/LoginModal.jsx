@@ -1,5 +1,5 @@
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
-import "../ModalWithForm/ModalWithForm.scss";
+import "../ModalWithForm/_ModalWithForm.scss";
 
 const LoginModal = ({ onClose, onRegister, onAltClick }) => {
   return (

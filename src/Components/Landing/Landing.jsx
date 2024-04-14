@@ -1,4 +1,4 @@
-import "./Landing.scss";
+import "./_Landing.scss";
 import Logo from "../../assets/images/logo-placeholder-white.svg";
 import { ActiveModalContext } from "../../contexts/ActiveModalContext";
 import { useContext } from "react";

@@ -1,4 +1,4 @@
-import "./ProfileForm.scss";
+import "./_ProfileForm.scss";
 
 function ProfileForm({ title, buttonText, onSubmit, formtype }) {
   return (

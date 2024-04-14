@@ -1,6 +1,10 @@
-@import "./Components/App/App.scss";
+@import "./Components/App/App";
+@import "./Components/Header/Header";
 @import "./Components/Landing/Landing.scss";
 @import "./Components/Modals/ModalWithForm/ModalWithForm.scss";
+@import "./Components/Nav/Nav";
+@import "./Components/ProfileForm/ProfileForm";
+
 body {
   margin: 0;
   padding: 0;

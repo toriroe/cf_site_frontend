@@ -1,4 +1,4 @@
-import "./ModalWithForm.scss";
+import "./_ModalWithForm.scss";
 
 const ModalWithForm = ({
   children,

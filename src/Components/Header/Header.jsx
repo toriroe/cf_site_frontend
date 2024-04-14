@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "./_Header.scss";
 import Nav from "../Nav/Nav";
 import Logo from "../../assets/images/logo-placeholder-white.svg";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
